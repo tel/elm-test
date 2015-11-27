@@ -10,6 +10,8 @@ import Task exposing (Task)
 import History
 import Native.MyUtils
 
+import Other
+
 stringify : a -> String
 stringify = Native.MyUtils.stringify
 
@@ -48,7 +50,7 @@ model =
 view address model =
   Html.div [ ]
         [ Html.text (toString model)
-        , Html.button [ Ev.onClick address Click ] [ Html.text "click" ]
+        , Html.button [ Ev.onClick address Click ] [ Html.text Other.name ]
         , Html.button [ Ev.onClick address GoTo ] [ Html.text "go to" ]
         ]
 

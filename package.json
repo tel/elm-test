@@ -5,10 +5,12 @@
   "devDependencies": {
     "browser-sync-brunch": "0.0.9",
     "brunch": "^2.0.1",
+    "clean-css-brunch": "^1.8.0",
     "digest-brunch": "^1.5.1",
-    "elm-brunch": "^0.3.1",
+    "elm-brunch-compiler": "file:../elm-brunch-compiler",
     "javascript-brunch": "^1.8.0",
     "node-bourbon": "^4.2.3",
-    "sass-brunch": "^1.9.1"
+    "sass-brunch": "^1.9.1",
+    "uglify-js-brunch": "^1.7.8"
   }
 }

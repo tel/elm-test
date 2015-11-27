@@ -1,14 +1,24 @@
 bourbon = require "node-bourbon"
 
 module.exports = config:
+  conventions:
+    vendor: /(^bower_components|node_modules|vendor|elm)[\\/]/
+
+  paths:
+    watched: ["app", "test", "vendor", "elm"]
+
   files:
-    javascripts: joinTo: "runtime.js"
+    javascripts: 
+      joinTo: "app.js"
+      # dependOn:
+      #   "elm/App.elm": 
+      #     - "elm/**/*.elm"
     stylesheets: joinTo: "app.css"
 
   plugins:
-    elmBrunch:
-      mainModules: ["app/App.elm"]
-      outputFolder: "public/"
+    elmCompiler:
+      sourceDirectory: "elm"
+      roots: [ "App.elm" ]
 
     sass:
       options:
