@@ -3,14 +3,14 @@
   "version": "0.1.0",
   "private": true,
   "devDependencies": {
-    "browser-sync-brunch": "0.0.9",
-    "brunch": "^2.0.1",
-    "clean-css-brunch": "^1.8.0",
-    "digest-brunch": "^1.5.1",
-    "elm-brunch-compiler": "file:../elm-brunch-compiler",
-    "javascript-brunch": "^1.8.0",
+    "css-loader": "^0.23.0",
+    "exports-loader": "^0.6.2",
+    "html-webpack-plugin": "^1.7.0",
     "node-bourbon": "^4.2.3",
-    "sass-brunch": "^1.9.1",
-    "uglify-js-brunch": "^1.7.8"
+    "node-elm-compiler": "^2.0.0",
+    "sass-loader": "^3.1.2",
+    "style-loader": "^0.13.0",
+    "temp": "^0.8.3",
+    "webpack": "^1.12.9"
   }
 }
