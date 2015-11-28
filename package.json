@@ -2,6 +2,10 @@
   "name": "simple-brunch",
   "version": "0.1.0",
   "private": true,
+  "scripts": {
+    "dev": "webpack --progress --colors --watch",
+    "dev-server": "browser-sync start --config bs-config.js"
+  },
   "devDependencies": {
     "browser-sync": "^2.10.0",
     "connect-history-api-fallback": "^1.1.0",
